@@ -3,18 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Web</title>
+    <title>Dra. Carolina Erazo | Servicios Legales</title>
     <style>
-        body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #f0f2f5; margin: 0; }
-        .card { background: white; padding: 2rem; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
-        h1 { color: #333; }
-        p { color: #666; }
+        /* Estilos Generales */
+        body { font-family: 'Times New Roman', serif; line-height: 1.6; color: #333; margin: 0; background-color: #f4f4f4; }
+        header { background: #1a2a3a; color: white; padding: 2rem; text-align: center; border-bottom: 5px solid #c5a059; }
+        .container { max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+        
+        /* Secciones */
+        .card { background: white; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); margin-bottom: 2rem; }
+        h1 { margin: 0; letter-spacing: 2px; text-transform: uppercase; }
+        h2 { color: #1a2a3a; border-bottom: 2px solid #c5a059; padding-bottom: 10px; }
+        
+        /* Especialidades */
+        .services { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; }
+        .service-item { background: #f9f9f9; padding: 1rem; border-left: 4px solid #c5a059; }
+
+        /* Botón de Contacto */
+        .btn-whatsapp { display: inline-block; background: #25d366; color: white; padding: 1rem 2rem; text-decoration: none; border-radius: 50px; font-weight: bold; margin-top: 1rem; transition: 0.3s; }
+        .btn-whatsapp:hover { background: #128c7e; transform: scale(1.05); }
+        
+        footer { text-align: center; padding: 2rem; font-size: 0.9rem; color: #777; }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>¡Hola desde GitHub!</h1>
-        <p>Esta es mi primera página web publicada con éxito.</p>
+
+    <header>
+        <h1>Dra. Carolina Erazo </h1>
+        <p>Abogada & Consultora Jurídica</p>
+    </header>
+
+    <div class="container">
+        <section class="card">
+            <h2>Compromiso y Ética Profesional</h2>
+            <p>ofrezco soluciones legales integrales con un enfoque humano y estratégico. Mi objetivo es proteger sus derechos y brindar tranquilidad en cada proceso legal.</p>
+        </section>
+
+        <section class="card">
+            <h2>Áreas de Especialidad</h2>
+            <div class="services">
+                <div class="service-item">
+                    <strong>Derecho de Familia</strong>
+                    <p>Divorcios, pensiones alimenticias y custodias.</p>
+                </div>
+                <div class="service-item">
+                    <strong>Derecho Civil</strong>
+                    <p>Contratos, herencias y reclamos de deudas.</p>
+                </div>
+                <div class="service-item">
+                    <strong>Derecho Laboral</strong>
+                    <p>Despidos, contratos y asesoría a empresas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="card" style="text-align: center;">
+            <h2>Agende una Consulta</h2>
+            <p>Atención personalizada bajo cita previa. Puede contactarme directamente por WhatsApp:</p>
+            <a href="0996135417" class="btn-whatsapp">Contactar por WhatsApp</a>
+        </section>
     </div>
+
+    <footer>
+        <p>&copy; 2026 Dra. Mariana Valdez - Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
